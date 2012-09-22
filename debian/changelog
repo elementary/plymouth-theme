@@ -1,0 +1,17 @@
+plymouth-theme-elementary (0.2.1) lucid; urgency=low
+
+  * Improved animation
+
+ -- Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>  Sat, 22 Jan 2011 17:50:07 +0300
+
+plymouth-theme-elementary (0.2) lucid; urgency=low
+
+  * Added text and FSCK messages support
+
+ -- Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>  Sun, 16 Jan 2011 01:01:05 +0300
+
+plymouth-theme-elementary (0.1) lucid; urgency=low
+
+  * Initial release
+
+ -- Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>  Sun, 28 Nov 2010 16:45:35 +0300 
