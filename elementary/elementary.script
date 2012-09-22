@@ -188,8 +188,14 @@ logo.z = 1000;
 logo.sprite.SetX (logo.x);
 logo.sprite.SetY (logo.y);
 logo.sprite.SetZ (logo.z);
-logo.sprite.SetOpacity (0); # for init puproses only; superseded by opacity angle below
-logo.opacity_angle = Math.Pi; # we'll need it later for cosine fade-in
+if (Plymouth.GetMode () == "boot" || Plymouth.GetMode () == "resume") {
+    logo.sprite.SetOpacity (0); # for init puproses only; superseded by opacity angle below
+    logo.opacity_angle = Math.Pi; # we'll need it later for cosine fade-in
+}
+else if (Plymouth.GetMode () == "shutdown" || Plymouth.GetMode () == "suspend") {
+    logo.sprite.SetOpacity (1); # for init puproses only; superseded by opacity angle below
+    logo.opacity_angle = 0; # we'll need it later for cosine fade-in
+}
 
 # assumes the blurred image has the same size as the main one
 logo_blurred.image = Image (blurred_logo_filename).Scale (logo.screen_size, logo.screen_size);
@@ -886,15 +892,21 @@ Plymouth.SetUpdateStatusFunction (update_status_callback);
 #
 fun refresh_callback ()
 {
-#    logo.sprite.SetX (logo.x);
-#    logo.sprite.SetY (logo.y);
     if (Plymouth.GetMode () == "boot" || Plymouth.GetMode () == "resume") {
-        logo.opacity_angle += ((2 * Math.Pi) / 50) * 0.3;  # 0.4 HZ
+        logo.opacity_angle += ((2 * Math.Pi) / 50) * 0.2;  # 0.2 HZ
         opacity = ( Math.Cos (logo.opacity_angle) + 1) / 2;
         if ( opacity > logo.sprite.GetOpacity () )
             logo.sprite.SetOpacity (opacity);
         else if ( opacity != 1 )
             logo.sprite.SetOpacity (1);
+    }
+    else if (Plymouth.GetMode () == "shutdown" || Plymouth.GetMode () == "suspend") {
+        logo.opacity_angle += ((2 * Math.Pi) / 50) * 0.2;  # 0.1 HZ
+        opacity = ( Math.Cos (logo.opacity_angle) + 1) / 2;
+        if ( opacity < logo.sprite.GetOpacity () )
+            logo.sprite.SetOpacity (opacity);
+        else if ( opacity != 0 )
+            logo.sprite.SetOpacity (0);
     }
     else
     {
