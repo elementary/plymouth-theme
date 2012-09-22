@@ -17,10 +17,12 @@
 #  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
 #  02111-1307, USA.
 # 
-#  Written by: Alberto Milone <alberto.milone@canonical.com>
+#  Written by: Sergey "Shnatsel" Davidoff <sergey@elementaryos.org>
 #
 #  Based on the example provided with the "script plugin" written by:
 #              Charlie Brej   <cbrej@cs.man.ac.uk>
+#  and on "ubuntu-logo" theme written by:
+#              Alberto Milone <alberto.milone@canonical.com>
 # 
 
 # Set the text colour in (rgb / 256)
@@ -210,6 +212,7 @@ logo_blurred.sprite.SetX (logo_blurred.x);
 logo_blurred.sprite.SetY (logo_blurred.y);
 logo_blurred.sprite.SetZ (logo_blurred.z);
 logo_blurred.sprite.SetOpacity (0);
+logo_blurred.opacity_angle = Math.Pi; # we'll need it later for cosine fade-in
 
 # Spacing below the logo - in pixels
 logo_spacing = logo.height / 8;
@@ -897,8 +900,12 @@ fun refresh_callback ()
         opacity = ( Math.Cos (logo.opacity_angle) + 1) / 2;
         if ( opacity > logo.sprite.GetOpacity () )
             logo.sprite.SetOpacity (opacity);
-        else if ( opacity != 1 )
+        else {
             logo.sprite.SetOpacity (1);
+            logo_blurred.opacity_angle += ((2 * Math.Pi) / 50) * 0.4;  # 0.4 HZ
+            opacity_blurred = ( Math.Cos (logo_blurred.opacity_angle) + 1) / 2;
+            logo_blurred.sprite.SetOpacity (opacity_blurred);
+        }
     }
     else if (Plymouth.GetMode () == "shutdown" || Plymouth.GetMode () == "suspend") {
         logo.opacity_angle += ((2 * Math.Pi) / 50) * 0.2;  # 0.1 HZ
