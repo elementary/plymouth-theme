@@ -908,12 +908,10 @@ fun refresh_callback ()
         }
     }
     else if (Plymouth.GetMode () == "shutdown" || Plymouth.GetMode () == "suspend") {
-        logo.opacity_angle += ((2 * Math.Pi) / 50) * 0.2;  # 0.1 HZ
-        opacity = ( Math.Cos (logo.opacity_angle) + 1) / 2;
+        logo.opacity_angle += ((2 * Math.Pi) / 50) * 0.1;  # actually 0.05 HZ because of the division below
+        opacity = ( Math.Cos (logo.opacity_angle) + 1) / 4 + 0.5;
         if ( opacity < logo.sprite.GetOpacity () )
             logo.sprite.SetOpacity (opacity);
-        else if ( opacity != 0 )
-            logo.sprite.SetOpacity (0);
     }
     else
     {
