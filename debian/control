@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 7.3.15ubuntu3)
 Standards-Version: 3.9.3
 
 Package: plymouth-theme-elementary
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, plymouth, plymouth-label
 Provides: plymouth-theme
 Replaces: plymouth (<< 0.8.1-1~)
