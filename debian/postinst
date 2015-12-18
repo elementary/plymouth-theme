@@ -19,10 +19,10 @@
 case "$1" in
     configure)
 	update-alternatives \
-		--install /lib/plymouth/themes/default.plymouth default.plymouth \
-		/lib/plymouth/themes/elementary/elementary.plymouth 100 \
-		--slave /lib/plymouth/themes/default.grub default.plymouth.grub \
-		/lib/plymouth/themes/elementary/elementary.grub
+		--install /usr/share/plymouth/themes/default.plymouth default.plymouth \
+		/usr/share/plymouth/themes/elementary/elementary.plymouth 100 \
+		--slave /usr/share/plymouth/themes/default.grub default.plymouth.grub \
+		/usr/share/plymouth/themes/elementary/elementary.grub
 
 	if which update-initramfs >/dev/null 2>&1
 	then
