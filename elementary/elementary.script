@@ -163,6 +163,20 @@ fun StringToInteger (str) {
 Window.SetBackgroundTopColor (0.00, 0.00, 0.00);     # Nice colour on top of the screen fading to
 Window.SetBackgroundBottomColor (0.00, 0.00, 0.00);  # an equally nice colour on the bottom
 
+texture = Image("texture.png");
+background = [];
+
+# Fill background with texture
+index = 0;
+for (row = 0; (row * texture.GetHeight ()) < Window.GetHeight (); row++) {
+    for (column = 0; (column * texture.GetWidth ()) < Window.GetWidth (); column++) {
+        background[index] = Sprite ();
+        background[index].SetImage (texture);
+        background[index].SetPosition (column * texture.GetWidth (), row * texture.GetHeight (), 0);
+        index++;
+    }
+}
+
 bits_per_pixel = Window.GetBitsPerPixel ();
 if (bits_per_pixel == 4) {
     logo_filename = "ubuntu_logo16.png";
