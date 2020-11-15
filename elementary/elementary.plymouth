@@ -8,7 +8,7 @@ Font=Inter 12
 TitleFont=Inter Light 30
 ImageDir=/usr/share/plymouth/themes/elementary
 DialogHorizontalAlignment=.5
-DialogVerticalAlignment=.382
+DialogVerticalAlignment=.7
 TitleHorizontalAlignment=.5
 TitleVerticalAlignment=.382
 HorizontalAlignment=.5
@@ -21,7 +21,7 @@ BackgroundStartColor=0x000000
 BackgroundEndColor=0x000000
 ProgressBarBackgroundColor=0x606060
 ProgressBarForegroundColor=0xffffff
-DialogClearsFirmwareBackground=true
+DialogClearsFirmwareBackground=false
 MessageBelowAnimation=true
 
 [boot-up]
@@ -40,19 +40,19 @@ UseFirmwareBackground=true
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-Title=Installing Updates...
-SubTitle=Do not turn off your computer
+_Title=Installing Updates...
+_SubTitle=Do not turn off your computer
 
 [system-upgrade]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-Title=Upgrading System...
-SubTitle=Do not turn off your computer
+_Title=Upgrading System...
+_SubTitle=Do not turn off your computer
 
 [firmware-upgrade]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-Title=Upgrading Firmware...
-SubTitle=Do not turn off your computer
+_Title=Upgrading Firmware...
+_SubTitle=Do not turn off your computer
