@@ -1,6 +1,6 @@
 [Plymouth Theme]
 Name=elementary
-Description=Jimmac's spinner theme using the ACPI BGRT graphics as background
+Description=elementary theme using the ACPI BGRT graphics as background
 ModuleName=two-step
 
 [two-step]
