@@ -160,8 +160,13 @@ fun StringToInteger (str) {
 }
 
 #-----------------------------------------------------------------------------
-Window.SetBackgroundTopColor (0.00, 0.00, 0.00);     # Nice colour on top of the screen fading to
-Window.SetBackgroundBottomColor (0.00, 0.00, 0.00);  # an equally nice colour on the bottom
+# set solid gray background #2e3436
+# https://github.com/elementary/greeter/blob/931d001998cf207a079516d99b0852f90d3568df/compositor/SystemBackground.vala#L27
+# R: #2e ->  46 -> 0.180392
+# G: #34 ->  52 -> 0.203922
+# B: #36 ->  54 -> 0.211765
+Window.SetBackgroundTopColor (0.180392, 0.203922, 0.211765);     # Nice colour on top of the screen fading to
+Window.SetBackgroundBottomColor (0.180392, 0.203922, 0.211765);  # an equally nice colour on the bottom
 
 texture = Image("texture.png");
 background = [];
