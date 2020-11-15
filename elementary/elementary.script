@@ -171,10 +171,13 @@ Window.SetBackgroundBottomColor (0.180392, 0.203922, 0.211765);  # an equally ni
 texture = Image("texture.png");
 background = [];
 
+max_width = 4096;
+max_height = 2160;
+
 # Fill background with texture
 index = 0;
-for (row = 0; (row * texture.GetHeight ()) < Window.GetHeight (); row++) {
-    for (column = 0; (column * texture.GetWidth ()) < Window.GetWidth (); column++) {
+for (row = 0; (row * texture.GetHeight ()) < max_height; row++) {
+    for (column = 0; (column * texture.GetWidth ()) < max_width; column++) {
         background[index] = Sprite ();
         background[index].SetImage (texture);
         background[index].SetPosition (column * texture.GetWidth (), row * texture.GetHeight (), 0);
