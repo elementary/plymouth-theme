@@ -7,7 +7,7 @@ Standards-Version: 3.9.3
 
 Package: plymouth-theme-elementary
 Architecture: all
-Depends: ${misc:Depends}, plymouth, plymouth-label
+Depends: ${misc:Depends}, plymouth, plymouth-label, plymouth-theme-spinner
 Provides: plymouth-theme
 Replaces: plymouth (<< 0.8.1-1~)
 Description: graphical boot animation and logger - Furry Remix theme
