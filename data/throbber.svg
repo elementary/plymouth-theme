@@ -5,14 +5,10 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="38"
-   width="38"
-   version="1.1"
    id="svg28"
-   sodipodi:docname="throbber.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   version="1.1"
+   width="38"
+   height="38">
   <metadata
      id="metadata34">
     <rdf:RDF>
@@ -21,165 +17,145 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs32" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1019"
-     id="namedview30"
-     showgrid="false"
-     inkscape:zoom="9.8333333"
-     inkscape:cx="12"
-     inkscape:cy="12"
-     inkscape:window-x="0"
-     inkscape:window-y="30"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg28" />
   <g
-     transform="matrix(2,0,0,2,-1511,-55)"
-     id="g26">
+     id="g26"
+     transform="matrix(2,0,0,2,-1511,-55)">
     <rect
-       height="5"
-       overflow="visible"
-       rx="0.5"
-       ry="0.5"
-       style="color:#000000;overflow:visible;fill:#666666;marker:none"
-       width="1"
-       x="764.5"
+       id="rect2"
        y="29"
-       id="rect2" />
-    <rect
-       height="5"
-       overflow="visible"
-       rx="0.5"
-       ry="0.5"
-       style="color:#000000;overflow:visible;opacity:0.578;fill:#666666;marker:none"
-       transform="rotate(-90)"
+       x="764.5"
        width="1"
-       x="-37.5"
+       style="color:#000000;overflow:visible;fill:#666666;marker:none"
+       ry="0.5"
+       rx="0.5"
+       overflow="visible"
+       height="5" />
+    <rect
+       id="rect4"
        y="757"
-       id="rect4" />
-    <rect
-       height="5"
-       overflow="visible"
-       rx="0.5"
-       ry="0.5"
-       style="color:#000000;overflow:visible;opacity:0.33500001;fill:#666666;marker:none"
-       transform="scale(-1)"
+       x="-37.5"
        width="1"
-       x="-765.5"
+       transform="rotate(-90)"
+       style="color:#000000;overflow:visible;opacity:0.578;fill:#666666;marker:none"
+       ry="0.5"
+       rx="0.5"
+       overflow="visible"
+       height="5" />
+    <rect
+       id="rect6"
        y="-45"
-       id="rect6" />
-    <rect
-       height="5"
-       overflow="visible"
-       rx="0.5"
-       ry="0.5"
-       style="color:#000000;overflow:visible;opacity:0.18999999;fill:#666666;marker:none"
-       transform="rotate(90)"
+       x="-765.5"
        width="1"
-       x="36.5"
+       transform="scale(-1)"
+       style="color:#000000;overflow:visible;opacity:0.33500001;fill:#666666;marker:none"
+       ry="0.5"
+       rx="0.5"
+       overflow="visible"
+       height="5" />
+    <rect
+       id="rect8"
        y="-773"
-       id="rect8" />
-    <rect
-       height="5"
-       overflow="visible"
-       rx="0.5"
-       ry="0.5"
-       style="color:#000000;overflow:visible;opacity:0.83300003;fill:#666666;marker:none"
-       transform="rotate(-30)"
+       x="36.5"
        width="1"
-       x="643.51001"
+       transform="rotate(90)"
+       style="color:#000000;overflow:visible;opacity:0.18999999;fill:#666666;marker:none"
+       ry="0.5"
+       rx="0.5"
+       overflow="visible"
+       height="5" />
+    <rect
+       id="rect10"
        y="406.543"
-       id="rect10" />
-    <rect
-       height="5"
-       overflow="visible"
-       rx="0.5"
-       ry="0.5"
-       style="color:#000000;overflow:visible;opacity:0.694;fill:#666666;marker:none"
-       transform="rotate(-60)"
+       x="643.51001"
        width="1"
-       x="349.957"
+       transform="rotate(-30)"
+       style="color:#000000;overflow:visible;opacity:0.83300003;fill:#666666;marker:none"
+       ry="0.5"
+       rx="0.5"
+       overflow="visible"
+       height="5" />
+    <rect
+       id="rect12"
        y="673.01001"
-       id="rect12" />
-    <rect
-       height="5"
-       overflow="visible"
-       rx="0.5"
-       ry="0.5"
-       style="color:#000000;overflow:visible;opacity:0.48200001;fill:#666666;marker:none"
-       transform="rotate(-120)"
+       x="349.957"
        width="1"
-       x="-415.043"
+       transform="rotate(-60)"
+       style="color:#000000;overflow:visible;opacity:0.694;fill:#666666;marker:none"
+       ry="0.5"
+       rx="0.5"
+       overflow="visible"
+       height="5" />
+    <rect
+       id="rect14"
        y="636.01001"
-       id="rect14" />
-    <rect
-       height="5"
-       overflow="visible"
-       rx="0.5"
-       ry="0.5"
-       style="color:#000000;overflow:visible;opacity:0.40200004;fill:#666666;marker:none"
-       transform="rotate(-150)"
+       x="-415.043"
        width="1"
-       x="-681.51001"
+       transform="rotate(-120)"
+       style="color:#000000;overflow:visible;opacity:0.48200001;fill:#666666;marker:none"
+       ry="0.5"
+       rx="0.5"
+       overflow="visible"
+       height="5" />
+    <rect
+       id="rect16"
        y="342.457"
-       id="rect16" />
-    <rect
-       height="5"
-       overflow="visible"
-       rx="0.5"
-       ry="0.5"
-       style="color:#000000;overflow:visible;opacity:0.28000004;fill:#666666;marker:none"
-       transform="rotate(150)"
+       x="-681.51001"
        width="1"
-       x="-644.51001"
+       transform="rotate(-150)"
+       style="color:#000000;overflow:visible;opacity:0.40200004;fill:#666666;marker:none"
+       ry="0.5"
+       rx="0.5"
+       overflow="visible"
+       height="5" />
+    <rect
+       id="rect18"
        y="-422.543"
-       id="rect18" />
-    <rect
-       height="5"
-       overflow="visible"
-       rx="0.5"
-       ry="0.5"
-       style="color:#000000;overflow:visible;opacity:0.23000004;fill:#666666;marker:none"
-       transform="rotate(120)"
+       x="-644.51001"
        width="1"
-       x="-350.957"
+       transform="rotate(150)"
+       style="color:#000000;overflow:visible;opacity:0.28000004;fill:#666666;marker:none"
+       ry="0.5"
+       rx="0.5"
+       overflow="visible"
+       height="5" />
+    <rect
+       id="rect20"
        y="-689.01001"
-       id="rect20" />
-    <rect
-       height="5"
-       overflow="visible"
-       rx="0.5"
-       ry="0.5"
-       style="color:#000000;overflow:visible;opacity:0.16000001;fill:#666666;marker:none"
-       transform="rotate(60)"
+       x="-350.957"
        width="1"
-       x="414.043"
+       transform="rotate(120)"
+       style="color:#000000;overflow:visible;opacity:0.23000004;fill:#666666;marker:none"
+       ry="0.5"
+       rx="0.5"
+       overflow="visible"
+       height="5" />
+    <rect
+       id="rect22"
        y="-652.01001"
-       id="rect22" />
-    <rect
-       height="5"
-       overflow="visible"
-       rx="0.5"
-       ry="0.5"
-       style="color:#000000;overflow:visible;opacity:0.12999998;fill:#666666;marker:none"
-       transform="rotate(30)"
+       x="414.043"
        width="1"
-       x="680.51001"
+       transform="rotate(60)"
+       style="color:#000000;overflow:visible;opacity:0.16000001;fill:#666666;marker:none"
+       ry="0.5"
+       rx="0.5"
+       overflow="visible"
+       height="5" />
+    <rect
+       id="rect24"
        y="-358.457"
-       id="rect24" />
+       x="680.51001"
+       width="1"
+       transform="rotate(30)"
+       style="color:#000000;overflow:visible;opacity:0.12999998;fill:#666666;marker:none"
+       ry="0.5"
+       rx="0.5"
+       overflow="visible"
+       height="5" />
   </g>
 </svg>
