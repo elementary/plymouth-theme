@@ -50,3 +50,9 @@ for i in range(0, STEPS):
             STEP_BASE_IMAGE,
             STEP_IMAGE
         )
+
+for i in range(0, STEPS * IMAGES_PER_STEP):
+    shutil.copyfile(
+        os.path.join(base_dir, 'elementary', 'throbber-{:04d}.png'.format(i)),
+        os.path.join(base_dir, 'elementary', 'animation-{:04d}.png'.format(i))
+    )
