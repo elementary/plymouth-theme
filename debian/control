@@ -2,7 +2,9 @@ Source: plymouth-theme-elementary
 Section: x11
 Priority: optional
 Maintainer: Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
-Build-Depends: debhelper (>= 7.3.15ubuntu3)
+Build-Depends: debhelper (>= 7.3.15ubuntu3),
+               meson,
+               imagemagick
 Standards-Version: 3.9.3
 
 Package: plymouth-theme-elementary
