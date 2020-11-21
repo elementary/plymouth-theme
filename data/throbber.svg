@@ -5,10 +5,35 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg28"
    version="1.1"
    width="38"
-   height="38">
+   height="38"
+   sodipodi:docname="throbber.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1013"
+     id="namedview18"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:zoom="20.289474"
+     inkscape:cx="19"
+     inkscape:cy="19"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg28" />
   <metadata
      id="metadata34">
     <rdf:RDF>
@@ -17,7 +42,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -25,13 +50,14 @@
      id="defs32" />
   <g
      id="g26"
-     transform="matrix(2,0,0,2,-1511,-55)">
+     transform="matrix(2,0,0,2,-1511,-55)"
+     style="fill:#ffffff;fill-opacity:1">
     <rect
        id="rect2"
        y="29"
        x="764.5"
        width="1"
-       style="color:#000000;overflow:visible;fill:#666666;marker:none"
+       style="color:#000000;overflow:visible;fill:#ffffff;marker:none;fill-opacity:1"
        ry="0.5"
        rx="0.5"
        overflow="visible"
@@ -42,7 +68,7 @@
        x="-37.5"
        width="1"
        transform="rotate(-90)"
-       style="color:#000000;overflow:visible;opacity:0.578;fill:#666666;marker:none"
+       style="color:#000000;overflow:visible;opacity:0.578;fill:#ffffff;marker:none;fill-opacity:1"
        ry="0.5"
        rx="0.5"
        overflow="visible"
@@ -53,7 +79,7 @@
        x="-765.5"
        width="1"
        transform="scale(-1)"
-       style="color:#000000;overflow:visible;opacity:0.33500001;fill:#666666;marker:none"
+       style="color:#000000;overflow:visible;opacity:0.33500001;fill:#ffffff;marker:none;fill-opacity:1"
        ry="0.5"
        rx="0.5"
        overflow="visible"
@@ -64,7 +90,7 @@
        x="36.5"
        width="1"
        transform="rotate(90)"
-       style="color:#000000;overflow:visible;opacity:0.18999999;fill:#666666;marker:none"
+       style="color:#000000;overflow:visible;opacity:0.18999999;fill:#ffffff;marker:none;fill-opacity:1"
        ry="0.5"
        rx="0.5"
        overflow="visible"
@@ -75,7 +101,7 @@
        x="643.51001"
        width="1"
        transform="rotate(-30)"
-       style="color:#000000;overflow:visible;opacity:0.83300003;fill:#666666;marker:none"
+       style="color:#000000;overflow:visible;opacity:0.83300003;fill:#ffffff;marker:none;fill-opacity:1"
        ry="0.5"
        rx="0.5"
        overflow="visible"
@@ -86,7 +112,7 @@
        x="349.957"
        width="1"
        transform="rotate(-60)"
-       style="color:#000000;overflow:visible;opacity:0.694;fill:#666666;marker:none"
+       style="color:#000000;overflow:visible;opacity:0.694;fill:#ffffff;marker:none;fill-opacity:1"
        ry="0.5"
        rx="0.5"
        overflow="visible"
@@ -97,7 +123,7 @@
        x="-415.043"
        width="1"
        transform="rotate(-120)"
-       style="color:#000000;overflow:visible;opacity:0.48200001;fill:#666666;marker:none"
+       style="color:#000000;overflow:visible;opacity:0.48200001;fill:#ffffff;marker:none;fill-opacity:1"
        ry="0.5"
        rx="0.5"
        overflow="visible"
@@ -108,7 +134,7 @@
        x="-681.51001"
        width="1"
        transform="rotate(-150)"
-       style="color:#000000;overflow:visible;opacity:0.40200004;fill:#666666;marker:none"
+       style="color:#000000;overflow:visible;opacity:0.40200004;fill:#ffffff;marker:none;fill-opacity:1"
        ry="0.5"
        rx="0.5"
        overflow="visible"
@@ -119,7 +145,7 @@
        x="-644.51001"
        width="1"
        transform="rotate(150)"
-       style="color:#000000;overflow:visible;opacity:0.28000004;fill:#666666;marker:none"
+       style="color:#000000;overflow:visible;opacity:0.28000004;fill:#ffffff;marker:none;fill-opacity:1"
        ry="0.5"
        rx="0.5"
        overflow="visible"
@@ -130,7 +156,7 @@
        x="-350.957"
        width="1"
        transform="rotate(120)"
-       style="color:#000000;overflow:visible;opacity:0.23000004;fill:#666666;marker:none"
+       style="color:#000000;overflow:visible;opacity:0.23000004;fill:#ffffff;marker:none;fill-opacity:1"
        ry="0.5"
        rx="0.5"
        overflow="visible"
@@ -141,7 +167,7 @@
        x="414.043"
        width="1"
        transform="rotate(60)"
-       style="color:#000000;overflow:visible;opacity:0.16000001;fill:#666666;marker:none"
+       style="color:#000000;overflow:visible;opacity:0.16000001;fill:#ffffff;marker:none;fill-opacity:1"
        ry="0.5"
        rx="0.5"
        overflow="visible"
@@ -152,7 +178,7 @@
        x="680.51001"
        width="1"
        transform="rotate(30)"
-       style="color:#000000;overflow:visible;opacity:0.12999998;fill:#666666;marker:none"
+       style="color:#000000;overflow:visible;opacity:0.12999998;fill:#ffffff;marker:none;fill-opacity:1"
        ry="0.5"
        rx="0.5"
        overflow="visible"
