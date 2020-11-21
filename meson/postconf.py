@@ -7,7 +7,7 @@ base_dir = os.environ.get('MESON_SOURCE_DIR', '.')
 
 STEPS = 12
 IMAGES_PER_STEP = 4
-SIZE=38
+SIZE = 38
 
 SVG = os.path.join(base_dir, 'data', 'throbber.svg')
 
