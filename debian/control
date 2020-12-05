@@ -1,15 +1,16 @@
 Source: plymouth-theme-elementary
 Section: x11
 Priority: optional
-Maintainer: Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
-Build-Depends: debhelper (>= 7.3.15ubuntu3)
-Standards-Version: 3.9.3
+Maintainer: elementary OS Team <builds@elementary.io>
+Build-Depends: debhelper (>= 10.5.1)
+Standards-Version: 4.5.0
 
 Package: plymouth-theme-elementary
 Architecture: all
 Depends: ${misc:Depends}, plymouth, plymouth-label, plymouth-theme-spinner
 Provides: plymouth-theme
-Replaces: plymouth (<< 0.8.1-1~)
+Breaks: elementary-default-settings (<<5.1.3)
+Replaces: elementary-default-settings (<<5.1.3), plymouth (<< 0.8.1-1~)
 Description: graphical boot animation and logger - Furry Remix theme
  Plymouth is an application that runs very early in the boot process
  (even before the root filesystem is mounted!) that provides a graphical
