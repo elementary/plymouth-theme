@@ -20,7 +20,7 @@ case "$1" in
     configure)
 	update-alternatives \
 		--install /usr/share/plymouth/themes/default.plymouth default.plymouth \
-		/usr/share/plymouth/themes/elementary/elementary.plymouth 100 \
+		/usr/share/plymouth/themes/elementary/elementary.plymouth 200 \
 		--slave /usr/share/plymouth/themes/default.grub default.plymouth.grub \
 		/usr/share/plymouth/themes/elementary/elementary.grub
 
