@@ -3,8 +3,8 @@ import os
 import shutil
 import subprocess
 
-install_dir = os.environ.get('MESON_INSTALL_PREFIX', '/usr')
-base_dir = os.environ.get('MESON_SOURCE_ROOT', '.')
+install_dir = os.environ['MESON_INSTALL_DESTDIR_PREFIX']
+base_dir = os.environ['MESON_SOURCE_ROOT']
 
 theme_dir = os.path.join(install_dir, 'share', 'plymouth', 'themes', 'elementary')
 
@@ -13,6 +13,8 @@ IMAGES_PER_STEP = 4
 SIZE = 38
 
 SVG = os.path.join(base_dir, 'data', 'throbber.svg')
+
+os.makedirs(theme_dir, exist_ok=True)
 
 for i in range(0, STEPS):
     STEP_BASE_IMAGE = os.path.join(theme_dir, 'throbber-{:04d}.png'.format(i * IMAGES_PER_STEP))
