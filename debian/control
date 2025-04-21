@@ -4,6 +4,8 @@ Priority: optional
 Maintainer: elementary OS Team <builds@elementary.io>
 Build-Depends:
     debhelper (>= 10.5.1),
+    imagemagick,
+    librsvg2-bin,
     meson
 Standards-Version: 4.5.0
 
