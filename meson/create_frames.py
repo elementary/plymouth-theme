@@ -3,7 +3,6 @@ import os
 import shutil
 import subprocess
 
-source_root = os.environ['MESON_SOURCE_ROOT']
 build_root = os.environ['MESON_BUILD_ROOT']
 build_dir = os.path.join(build_root, 'elementary')
 
