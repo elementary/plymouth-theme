@@ -12,7 +12,7 @@ rsvg = find_program('rsvg-convert')
 run_command(
     rsvg, '--format', 'png',
     '--width=38', '--height=38',
-    '--output', meson.project_build_root() / 'elementary' / 'throbber-0000.png',
+    '--output', meson.project_build_root() / 'elementary' / 'throbber-0001.png',
     'elementary' / 'throbber.svg',
     check: true,
 )

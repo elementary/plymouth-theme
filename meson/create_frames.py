@@ -7,7 +7,7 @@ build_root = os.environ['MESON_BUILD_ROOT']
 build_dir = os.path.join(build_root, 'elementary')
 
 STEPS = 12
-IMAGES_PER_STEP = 4
+IMAGES_PER_STEP = 1
 SIZE = 38
 
 for i in range(0, STEPS):
@@ -15,7 +15,7 @@ for i in range(0, STEPS):
 
     try:
         shutil.copyfile(
-            os.path.join(build_dir, 'throbber-0000.png'.format(i)),
+            os.path.join(build_dir, 'throbber-0001.png'.format(i)),
             STEP_BASE_IMAGE
         )
     except shutil.SameFileError:
@@ -27,6 +27,18 @@ for i in range(0, STEPS):
         'none',
         '-rotate',
         '{:d}'.format(i * 30),
+        STEP_BASE_IMAGE,
+        STEP_BASE_IMAGE
+    ])
+
+    subprocess.call([
+        'convert',
+        '-background',
+        'none',
+        '-gravity',
+        'center',
+        '-extent',
+        '{:d}x{:d}'.format(SIZE, SIZE),
         STEP_BASE_IMAGE,
         STEP_BASE_IMAGE
     ])
