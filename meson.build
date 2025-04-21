@@ -1,7 +1,25 @@
 project(
-    'io.elementary.plymouth-theme'
+    'io.elementary.plymouth-theme',
+    version: '6.0.0'
 )
 
 convert = find_program('convert')
+python3 = find_program('python3', required: true)
 
-meson.add_install_script('meson/post_install.py')
+run_command(
+    python3,
+    'meson' / 'post_install.py',
+    check: true
+)
+
+install_subdir(
+    'elementary',
+    install_dir: get_option('datadir') / 'plymouth' / 'themes',
+    follow_symlinks: false
+)
+
+install_subdir(
+    meson.project_build_root() / 'elementary',
+    install_dir: get_option('datadir') / 'plymouth' / 'themes',
+    strip_directory: false
+)

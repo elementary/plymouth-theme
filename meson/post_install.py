@@ -3,21 +3,20 @@ import os
 import shutil
 import subprocess
 
-install_dir = os.environ['MESON_INSTALL_DESTDIR_PREFIX']
-base_dir = os.environ['MESON_SOURCE_ROOT']
-
-theme_dir = os.path.join(install_dir, 'share', 'plymouth', 'themes', 'elementary')
+source_root = os.environ['MESON_SOURCE_ROOT']
+build_root = os.environ['MESON_BUILD_ROOT']
+build_dir = os.path.join(build_root, 'elementary')
 
 STEPS = 12
 IMAGES_PER_STEP = 4
 SIZE = 38
 
-SVG = os.path.join(base_dir, 'data', 'throbber.svg')
+SVG = os.path.join(source_root, 'elementary', 'throbber.svg')
 
-os.makedirs(theme_dir, exist_ok=True)
+os.makedirs(build_dir, exist_ok=True)
 
 for i in range(0, STEPS):
-    STEP_BASE_IMAGE = os.path.join(theme_dir, 'throbber-{:04d}.png'.format(i * IMAGES_PER_STEP))
+    STEP_BASE_IMAGE = os.path.join(build_dir, 'throbber-{:04d}.png'.format(i * IMAGES_PER_STEP))
 
     subprocess.call([
         'convert',
@@ -50,7 +49,7 @@ for i in range(0, STEPS):
     ])
 
     for j in range(1, IMAGES_PER_STEP):
-        STEP_IMAGE = os.path.join(theme_dir, 'throbber-{:04d}.png'.format(i * IMAGES_PER_STEP + j))
+        STEP_IMAGE = os.path.join(build_dir, 'throbber-{:04d}.png'.format(i * IMAGES_PER_STEP + j))
         shutil.copyfile(
             STEP_BASE_IMAGE,
             STEP_IMAGE
@@ -59,8 +58,8 @@ for i in range(0, STEPS):
 for i in range(0, STEPS * IMAGES_PER_STEP):
     try:
         shutil.copyfile(
-            os.path.join(theme_dir, 'throbber-{:04d}.png'.format(i)),
-            os.path.join(theme_dir, 'animation-{:04d}.png'.format(i))
+            os.path.join(build_dir, 'throbber-{:04d}.png'.format(i)),
+            os.path.join(build_dir, 'animation-{:04d}.png'.format(i))
         )
     except shutil.SameFileError:
         pass
