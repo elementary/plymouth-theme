@@ -6,6 +6,17 @@ project(
 convert = find_program('convert')
 python3 = find_program('python3', required: true)
 
+run_command('mkdir', meson.build_root() / 'elementary', check: false)
+
+rsvg = find_program('rsvg-convert')
+run_command(
+    rsvg, '--format', 'png',
+    '--width=38', '--height=38',
+    '--output', '@0@.png'.format(meson.project_build_root() / 'elementary' / 'throbber-0000'),
+    'elementary' / 'throbber.svg',
+    check: true,
+)
+
 run_command(
     python3,
     'meson' / 'post_install.py',

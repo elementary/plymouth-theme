@@ -11,20 +11,16 @@ STEPS = 12
 IMAGES_PER_STEP = 4
 SIZE = 38
 
-SVG = os.path.join(source_root, 'elementary', 'throbber.svg')
-
-os.makedirs(build_dir, exist_ok=True)
-
 for i in range(0, STEPS):
     STEP_BASE_IMAGE = os.path.join(build_dir, 'throbber-{:04d}.png'.format(i * IMAGES_PER_STEP))
 
-    subprocess.call([
-        'convert',
-        '-background',
-        'none',
-        SVG,
-        STEP_BASE_IMAGE
-    ])
+    try:
+        shutil.copyfile(
+            os.path.join(build_dir, 'throbber-0000.png'.format(i)),
+            STEP_BASE_IMAGE
+        )
+    except shutil.SameFileError:
+        pass
 
     subprocess.call([
         'convert',
@@ -32,18 +28,6 @@ for i in range(0, STEPS):
         'none',
         '-rotate',
         '{:d}'.format(i * 30),
-        STEP_BASE_IMAGE,
-        STEP_BASE_IMAGE
-    ])
-
-    subprocess.call([
-        'convert',
-        '-background',
-        'none',
-        '-gravity',
-        'center',
-        '-extent',
-        '{:d}x{:d}'.format(SIZE, SIZE),
         STEP_BASE_IMAGE,
         STEP_BASE_IMAGE
     ])
