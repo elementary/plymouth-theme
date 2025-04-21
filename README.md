@@ -21,11 +21,14 @@ There are 2 choices for the alternative default.plymouth (providing /usr/share/p
 * 2            /usr/share/plymouth/themes/elementary/elementary.plymouth   100       manual mode
 ```
 
-Copy the latest theme
+Run `meson build` to configure the build environment
 
-```bash
-sudo cp -r elementary/* /usr/share/plymouth/themes/elementary/
-```
+    meson setup build --prefix=/usr
+    cd build
+
+To install, use `ninja install`
+
+    ninja install
 
 and build a new initramfs to apply the changes
 
