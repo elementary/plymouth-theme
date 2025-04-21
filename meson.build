@@ -5,5 +5,6 @@ project(
 
 install_subdir(
     'elementary',
-    install_dir : get_option('datadir') / 'plymouth' / 'themes'
+    install_dir: get_option('datadir') / 'plymouth' / 'themes',
+    follow_symlinks: false
 )
