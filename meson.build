@@ -14,8 +14,7 @@ run_command(
 
 install_subdir(
     'elementary',
-    install_dir: get_option('datadir') / 'plymouth' / 'themes',
-    follow_symlinks: false
+    install_dir: get_option('datadir') / 'plymouth' / 'themes'
 )
 
 install_subdir(
