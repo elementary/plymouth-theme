@@ -23,15 +23,15 @@ DialogClearsFirmwareBackground=false
 MessageBelowAnimation=true
 
 [boot-up]
-UseEndAnimation=false
+UseEndAnimation=true
 UseFirmwareBackground=true
 
 [shutdown]
-UseEndAnimation=false
-UseFirmwareBackground=true
+UseEndAnimation=true
+UseFirmwareBackground=false
 
 [reboot]
-UseEndAnimation=false
+UseEndAnimation=true
 UseFirmwareBackground=true
 
 [updates]
@@ -44,6 +44,7 @@ _SubTitle=Do not turn off your computer
 [system-upgrade]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
+UseEndAnimation=true
 UseProgressBar=true
 _Title=Upgrading System...
 _SubTitle=Do not turn off your computer
@@ -51,6 +52,7 @@ _SubTitle=Do not turn off your computer
 [firmware-upgrade]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
+UseEndAnimation=true
 UseProgressBar=true
 _Title=Upgrading Firmware...
 _SubTitle=Do not turn off your computer
