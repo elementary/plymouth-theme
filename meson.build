@@ -1,6 +1,7 @@
 project(
     'io.elementary.plymouth-theme',
-    version: '6.0.0'
+    version: '6.0.0',
+    meson_version: '>= 1.3.0'
 )
 
 install_subdir(
