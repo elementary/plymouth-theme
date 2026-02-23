@@ -2,13 +2,13 @@ plymouth-theme-elementary (6.0.0) focal; urgency=medium
 
   * New upstream release.
 
- -- Daniel Foré <daniel@elementary.io>  Tue, 27 Jul 2021 10:55:14 -0700
+ -- Danielle Foré <danielle@elementary.io>  Tue, 27 Jul 2021 10:55:14 -0700
 
 plymouth-theme-elementary (5.9.0) focal; urgency=medium
 
   * Prepare for elementary OS 6
 
- -- elementary, Inc. <builds@elementary.io>  Sat, 12 Dec 2020 11:29:54 +0100
+ -- elementary <builds@elementary.io>  Sat, 12 Dec 2020 11:29:54 +0100
 
 plymouth-theme-elementary (0.2.1) lucid; urgency=low
 
