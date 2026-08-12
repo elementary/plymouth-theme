@@ -38,19 +38,19 @@ UseFirmwareBackground=true
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-_Title=Installing Updates...
-_SubTitle=Do not turn off your computer
+Title=Installing Updates...
+SubTitle=Do not turn off your computer
 
 [system-upgrade]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-_Title=Upgrading System...
-_SubTitle=Do not turn off your computer
+Title=Upgrading System...
+SubTitle=Do not turn off your computer
 
 [firmware-upgrade]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-_Title=Upgrading Firmware...
-_SubTitle=Do not turn off your computer
+Title=Upgrading Firmware...
+SubTitle=Do not turn off your computer
