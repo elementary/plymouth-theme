@@ -54,3 +54,10 @@ ProgressBarShowPercentComplete=true
 UseProgressBar=true
 Title=Upgrading Firmware...
 SubTitle=Do not turn off your computer
+
+[system-reset]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+Title=Resetting System...
+SubTitle=Do not turn off your computer
