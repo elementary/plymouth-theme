@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38" height="38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g fill="#fff">
+  <path d="m19 3c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1s-1-0.446-1-1v-8c0-0.554 0.446-1 1-1z"/>
+  <path transform="rotate(-90)" d="m-19 3c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1s-1-0.446-1-1v-8c0-0.554 0.446-1 1-1z" opacity=".578"/>
+  <path transform="scale(-1)" d="m-19-35c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1s-1-0.446-1-1v-8c0-0.554 0.446-1 1-1z" opacity=".335"/>
+  <path transform="rotate(90)" d="m19-35c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1s-1-0.446-1-1v-8c0-0.554 0.446-1 1-1z" opacity=".19"/>
+  <path transform="rotate(-30)" d="m6.9549 9.954c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1s-1-0.446-1-1v-8c0-0.554 0.446-1 1-1z" opacity=".833"/>
+  <path transform="rotate(-60)" d="m-6.9539 9.9548c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1s-1-0.446-1-1v-8c0-0.554 0.446-1 1-1z" opacity=".694"/>
+  <path transform="rotate(240)" d="m-25.954-9.0451c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1s-1-0.446-1-1v-8c0-0.554 0.446-1 1-1z" opacity=".482"/>
+  <path transform="rotate(210)" d="m-25.955-22.954c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1s-1-0.446-1-1v-8c0-0.554 0.446-1 1-1z" opacity=".402"/>
+  <path transform="rotate(150)" d="m-6.9548-41.954c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1s-1-0.446-1-1v-8c0-0.554 0.446-1 1-1z" opacity=".28"/>
+  <path transform="rotate(120)" d="m6.9539-41.955c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1s-1-0.446-1-1v-8c0-0.554 0.446-1 1-1z" opacity=".23"/>
+  <path transform="rotate(60)" d="m25.954-22.955c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1s-1-0.446-1-1v-8c0-0.554 0.446-1 1-1z" opacity=".16"/>
+  <path transform="rotate(30)" d="m25.955-9.0461c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1s-1-0.446-1-1v-8c0-0.554 0.446-1 1-1z" opacity=".13"/>
+ </g>
+</svg>

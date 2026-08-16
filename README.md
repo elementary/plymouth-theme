@@ -5,6 +5,8 @@ elementary Plymouth theme using the ACPI BGRT graphics as background
 ## Building and installing
 
 You'll need the following dependencies:
+* imagemagick
+* librsvg2-bin
 * plymouth
 * plymouth-theme-spinner
 
